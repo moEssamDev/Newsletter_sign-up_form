@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    --tomato: hsl(4, 100%, 67%);
+
+    /* ### Neutral */
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: var(--charcoalGrey);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--white);
+    max-width: 420px;
+    padding: 30px 50px;
+    border-radius: 30px;
+    gap: 20px;
+}
+main h1 {
+    font-size: 45px;
+    line-height: 50px;
+    color: var(--darkSlateGrey);
+    margin-top: 15px;
+}
+main p {
+    font-size: 15px;
+    color: var(--darkSlateGrey);
+    font-weight: 400;
+}
+main p span {
+    font-weight: 700;
+}
+main button {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    padding: 15px 0;
+    background-color: var(--darkSlateGrey);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+main button:hover {
+    background-color: var(--tomato);
+}
+
+@media (max-width: 500px) {
+    body {
+        background: white;
+    }
+    main {
+        max-width: 100%;
+        border-radius: 0;
+        padding-top: 120px;
+        padding-left: 30px;
+    }
+    main button {
+        margin-top: 200px;
+    }
+}

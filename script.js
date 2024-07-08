@@ -27,10 +27,10 @@ function updateIllustrationCover() {
 
   if (screenwidth <= 700) {
     document.getElementById("cover").src =
-      "/assets/images/illustration-sign-up-mobile.svg";
+      "assets/images/illustration-sign-up-mobile.svg";
   } else {
     document.getElementById("cover").src =
-      "/assets/images/illustration-sign-up-desktop.svg";
+      "assets/images/illustration-sign-up-desktop.svg";
   }
 }
 

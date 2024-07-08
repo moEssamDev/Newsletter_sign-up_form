@@ -13,7 +13,7 @@ function validateEmail() {
   if (regex.test(email)) {
     document.getElementById("email").style.borderColor = "hsl(231, 7%, 60%)";
     localStorage.setItem("userEmail", email);
-    window.location.href = "/page/success.html";
+    window.location.href = "page/success.html";
   } else {
     document.getElementById("email").style.color = "#ff5160";
     document.getElementById("email").style.borderColor = "#ff5160";
